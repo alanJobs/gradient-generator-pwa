@@ -85,8 +85,8 @@ self.addEventListener("fetch", e => {
                 return fetch(e.request);
             }
         )
-        /*.catch(
-                    () => caches.match('./pages/fallback.html')
-                )*/
+        .catch(
+            () => caches.match('./pages/fallback.html')
+        )
     );
 });
